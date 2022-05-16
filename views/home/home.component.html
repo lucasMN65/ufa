@@ -1,0 +1,13 @@
+<app-footer></app-footer>
+<app-header></app-header>
+<form #lucasform="ngForm"(ngSubmit)="onSubmit()">
+
+    <label for="email"> Email: </label>
+    <input type="email" id="email" name="email" [(ngModel)] = "lucasModel.email"/> 
+    
+    <label for="senha"> Senha: </label>
+    <input type="password" id="senha" name="senha" [(ngModel)] = "lucasModel.senha">
+  
+    <button type="submit">Enviar</button>
+</form>
+<a routerLink="contato">Contato</a>
